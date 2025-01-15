@@ -8,6 +8,71 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form action="/submit" method="post">
+		<div>
+		  <label for="name">Name</label>
+		  <input type="text" id="name" name="name" placeholder="Name" required>
+        </div> 
+		<br>
+		
+		<div>
+		  <label for="email">Email</label>
+		  <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+		<br>
+		
+		<div>
+		<label for="name">Gender</label> 
+		  <input type="radio" name="gender" id="gender_m" required>M
+		  <input type="radio" name="gender" id="gender_f" required>F
+		</div>
+		<br>
+		
+		<div>
+			<label for="cars">Car Brands</label>
+			<select id="cars" name="cars" placeholder="--Please choose an option--" required >
+				<option value=" ">--Please choose an option--</option>
+				<option value="mahindra">Mahindra</option>
+				<option value="tata">TATA</option>
+				<option value="landrover">Land Rover</option>
+				<option value="jaguar"> Jaguar </option>
+				<option value="pinnifarina">Pinnifarina</option>
+				<option value="hindustanmtrs">Hindustan motors</option>
+			</select>
+		</div>
+		<br>
+		
+		<div>
+			<label for="age">Age</label>
+			<input id="age" type="Number" name="age" placeholder="Age" required>
+		</div>
+		<br>
+		
+		<div>
+			<label for="dob">DOB</label>
+			<input type="date" id="dob" name="dob" required>
+		</div>	
+		<br>
+		
+		<div>
+			<label for="tel">Phone Number</label>
+			<input type="tel" id="tel" name="tel" required>
+		</div>	
+		<br>
+		
+		<div>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+		</div>	
+		<br>
+		
+		<div>
+			<label for="tos">I agree to the TOS</label>
+			<input type="checkbox" id="tos" name="tos" required>
+		</div>	
+		<br>
+		<button type="submit">Submit</button>
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
